@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+}
+
+.card{
+    /* box-shadow: 5px 2px 10px white; */
+    max-width: 350px;
+    width: 60%;
+    background: linear-gradient(120deg, rgba(63, 146, 240, 0.87), rgb(88, 207, 233));
+    color: #fff;
+    margin: 50px auto 0;
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    width: 350%;
+    margin: auto .5rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    padding: 10px 25px;
+    color: #555;
+    background: #ddd;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+.search button{
+    margin-left: .5rem;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    background: #ddd;
+    color: #666;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.temp{
+    font-size: 4.5rem;
+}
+
+.city{
+    font-size: 2rem;
+}
+.weather-icon{
+    width: 150px;
+    margin-top: 1rem;
+}
+
+.details{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2.5rem;
+    align-items: center;
+}
+
+.cols{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cols p:first-child{
+    font-size: 1.5rem;
+}
+
+.cols img{
+    /* margin-bottom: .75rem; */
+    width: 2rem;
+    margin-right: .5rem;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    font-size: 1rem;
+    padding: .5rem;
+    text-align: left;
+    color: rgba(23, 20, 20, 0.818);
+    display: none;
+}
+
+@media all , (max-width:450px){
+
+    .card{
+        width: 300px;
+    }
+    .search input{
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .search i{
+        font-size: 1.2rem;
+    }
+    
+    .search button{
+        width: 40px;
+        height: 40px;
+        padding: .25rem;
+    }
+
+    .temp{
+        font-size: 3rem;
+    }
+
+    .city{
+        font-size: 1.5rem;
+    }
+
+    .details{
+        padding: .5rem 1rem;
+        /* border: 2px solid red; */
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cols img{
+        width: 30px;
+    }
+
+    .cols p:first-child{
+        font-size: 1rem;
+    }
+
+    .cols p:last-child{
+        font-size: .75rem;
+    }
+}
